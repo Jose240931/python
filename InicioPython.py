@@ -1,6 +1,6 @@
 import random
 
-#pedir edad del usuario
+#Pedir edad del usuario
 edad=int (input ("Introduce tu edad"))
 
 #Le sumo 10 a la edad que es introducida por el usuario
