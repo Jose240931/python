@@ -1,0 +1,32 @@
+import random
+
+print("hola")
+#pedir edad del usuario y añadir 10 y escoger un trabajo aleatorio
+edad=int (input ("Introduce tu edad"))
+
+edad +=10
+
+numero=random.randint(1,10)
+print(numero)
+
+match numero:
+    case 1:
+        print("Seras medico y tendras ",edad," años")
+    case 2:
+        print ("Seras piloto y tendras  ",edad," años")
+    case 3:
+        print ("Seras profesor y tendras ",edad," años")
+    case 4:
+        print ("Seras programador y tendras ",edad," años")
+    case 5:
+        print ("Seras bombero y tendras ",edad," años")
+    case 6:
+        print ("Seras policia y tendras ",edad," años")
+    case 7:
+        print ("Seras ingeniero y tendras ",edad," años")
+    case 8:
+        print("Seras mecanico y tendras ",edad," años")
+    case 9:
+        print("Seras diseñador 3d y tnedras ",edad," años")
+    case 10:
+        print("Seras militar y tendras ",edad," años")
