@@ -1,7 +1,14 @@
+class ErrorValorMayor10 (Exception):
+    #Excepcion personalizada en una clase que he echo yo
+    pass
+
+
 
 #Se intenta hacer algo con el try, en este caso capturar un numero, y dividirlo entre cero
 try:
     valor = int(input("Introduce un numero: "))
+    if valor>10:
+        raise ErrorValorMayor10
     print(valor/0)
 
 #Con raise al igual que en java se lanzan excepciones manualmente
@@ -15,6 +22,8 @@ except ValueError:
 except ZeroDivisionError:
     print("Error: se ha intentado dividir entre cero")
 #Esta es una excepcion general, es decir se crea una variable que va a ser la que se guarde el error de ejecucion
+except ErrorValorMayor10:
+    print ("Error el numero es mayor de 10")
 except Exception as error:
     print("Se ha producido un error:", error)
 #Al poner else despues de un try, solo se ejecuta lo de dentro del else si no se lanza ninguna excepcion
