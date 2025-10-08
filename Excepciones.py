@@ -21,9 +21,10 @@ except ValueError:
 # hace referencia a la division entre cero
 except ZeroDivisionError:
     print("Error: se ha intentado dividir entre cero")
-#Esta es una excepcion general, es decir se crea una variable que va a ser la que se guarde el error de ejecucion
+#Excepcion personalizada que he creado yo en el que si el valor es mayor a 10 salta una excepcion
 except ErrorValorMayor10:
     print ("Error el numero es mayor de 10")
+# Esta es una excepcion general, es decir se crea una variable que va a ser la que se guarde el error de ejecucion
 except Exception as error:
     print("Se ha producido un error:", error)
 #Al poner else despues de un try, solo se ejecuta lo de dentro del else si no se lanza ninguna excepcion
